@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-bold {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+
+.bg-color {
+    background-color: #f5f8ff;
+}
+
+.text-dark-1 {
+    color: black;
+}
+
+.text-orange {
+    color: #E95A08;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-gray {
+    color: #6e6e6e;
+}
+
+/* header styles */
+/* navbar related styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 48px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #252432;
+    font-weight: 500;
+
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #8987A1;
+    font-weight: 500;
+}
+
+.navbar,
+.banner {
+    min-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+
+.banner img {
+    width: 1140;
+    height: 461;
+}
+
+.banner h1 {
+    width: 570;
+    height: 178;
+}
+
+.banner-description {
+    font-family: inter;
+}
