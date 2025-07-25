@@ -3,8 +3,11 @@
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
+    font-size: 22px;
     font-style: normal;
+    color: #6e6e6e;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
@@ -12,8 +15,9 @@
 .noto-serif-bold {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: bold;
     font-style: normal;
+    font-size: 65px;
     font-variation-settings:
         "wdth" 100;
 }
@@ -43,11 +47,24 @@
     color: #6e6e6e;
 }
 
+.button {
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 /* header styles */
 /* navbar related styles */
 .navbar {
     justify-content: space-between;
     align-items: center;
+    padding: 25px 25px 25px 25px;
+    margin-bottom: 50px;
 }
 
 .nav-item {
@@ -79,18 +96,191 @@
     justify-content: space-between;
     gap: 5px;
     align-items: center;
+    margin-top: 80px;
+    padding: 25px 25px 25px 25px
 }
 
 .banner img {
-    width: 1140;
-    height: 461;
+    width: 570;
+    height: 355;
 }
 
-.banner h1 {
+.banner-title {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 65px;
+    font-variation-settings:
+        "wdth" 100;
     width: 570;
     height: 178;
 }
 
 .banner-description {
-    font-family: inter;
+    font-family: "Inter", sans-serif;
+    color: #6e6e6e;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    width: 570;
+    height: 178;
+    text-align: left;
+    min-width: 500px;
+}
+
+/* Our Plants */
+.our-plants {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h2 {
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plant-description {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-plants-box {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* <!-- Flower & Plants Lover --> */
+.flower-plants {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    padding: 25px;
+
+}
+
+.h2-flower {
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Latest Deals */
+/* .latest-deals {
+    justify-content: center;
+    display: block;
+    align-items: center;
+} */
+
+.latest-deals {
+    text-align: center;
+}
+
+.h3 {
+    font-family: "Noto Serif", serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Join the colorful bunch */
+.bunch {
+    background-image: url(../images/news-letter-bg.png);
+    text-align: center;
+    color: #ffffff;
+    width: 1440;
+    height: 533;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Footer */
+/* .footer {
+    display: flex;
+    /* justify-content: space-around; */
+justify-content: space-between;
+}
+
+/* .footer-img {
+    display: flex;
+    justify-content: space-between;
+} */
+.footer {
+    background-color: #f6f6f6;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: space-around;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-column a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.link-column a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons img {
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-column {
+        margin-bottom: 20px;
+    }
 }
